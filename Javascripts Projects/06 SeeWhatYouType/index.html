@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>See What You Type</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>See What You Type</h1>
+      <textarea id="input" cols="30" rows="10" oninput="update()"></textarea>
+      <h3>Your Text :</h3>
+      <p id="output">Input Box Is Empty... Start Typing</p>
+    </div>
+  </body>
+  <script>
+    const input = document.getElementById("input");
+    const h3 = document.querySelector("h3");
+    const output = document.getElementById("output");
+
+    function update() {
+      if (input.value.length > -1) {
+        h3.innerHTML = "Yout Text : " + input.value;
+      }
+      if (input.value.length > 0) {
+        output.innerHTML = "";
+      }
+      if (input.value.length == 0) {
+        output.innerText = "Input Box Is Empty... Start Typing";
+      }
+
+      return;
+    }
+    update();
+  </script>
+</html>
