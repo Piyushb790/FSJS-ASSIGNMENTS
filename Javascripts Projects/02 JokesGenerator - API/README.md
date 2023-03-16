@@ -1,1 +1,1 @@
-# Deploy Link 🔗 [live RandomJokesGenerator] (https://randomjokesgenerator-api.netlify.app/)
+# Deploy Link 🔗 [RandomJokesGenerator] (https://randomjokesgenerator-api.netlify.app)
